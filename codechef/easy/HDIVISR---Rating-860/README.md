@@ -59,7 +59,7 @@ The divisors of $24$ are $1, 2, 3, 4, 6, 8, 12, 24$, out of which $1, 2, 3, 4, 6
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-29T11:45:49.247Z  
+**Submitted:** 2026-09-29T11:46:03.255Z  
 
 ```py
 # cook your dish here
