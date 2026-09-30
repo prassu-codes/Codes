@@ -2,9 +2,13 @@ t=int(input())
 for _ in range(t):
     n=int(input())
     a=list(map(int,input().split()))
-    c=0
-    for i in range(n-1,0,-1):
-        if (a[i]-a[i-1])!=1:
-            a[i-1]=(a[i]-1)
-            c+=1 
-    print(c)
+    ma={}
+    maxfreq=0
+    for i in range(n):
+        v=a[i]-i
+        if v not in ma:
+            ma[v]=1
+        else:
+            ma[v]+=1
+        maxfreq=max(ma[v],maxfreq)
+    print(n-maxfreq)
