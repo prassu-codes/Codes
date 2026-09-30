@@ -56,14 +56,25 @@ Output
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-30T14:53:56.044Z  
+**Submitted:** 2026-09-30T14:57:21.278Z  
 
 ```py
-# cook your dish here
-t=int(input())
-n,m,k=map(int,input().split())
-a=list(map(int,input().split()))
 
+t=int(input())
+for _ in range(t):
+    n,m,k=map(int,input().split())
+    a=list(map(int,input().split()))
+    p=[]
+    for i in range(1,n+1):
+        p.append(i)
+    for j in a:
+        p.remove(j)
+    mini=[]
+    while k>0:
+        mini.append(min(p))
+        p.remove(min(p))
+        k-=1
+    print(*mini)
 ```
 
 ---
