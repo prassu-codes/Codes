@@ -64,7 +64,7 @@ Alice
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-30T16:18:13.599Z  
+**Submitted:** 2026-09-30T16:20:28.415Z  
 
 ```py
 t=int(input())
