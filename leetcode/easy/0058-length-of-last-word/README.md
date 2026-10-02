@@ -49,19 +49,19 @@ Explanation: The last word is "joyboy" with length 6.
 
 **Language:** Python  
 **Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 19.1 MB (beats 87.94%)  
-**Submitted:** 2026-10-02T18:57:58.346Z  
+**Memory:** 19.2 MB (beats 54.78%)  
+**Submitted:** 2026-10-02T18:59:11.725Z  
 
 ```py
 class Solution:
     def lengthOfLastWord(self, s: str) -> int:
-        b=""
+        c=0
         for i in range(len(s)-1,-1,-1):
             if s[i]!=' ':
-                b+=s[i]
+                c+=1
                 if s[i-1] ==' ':
                     break 
-        return len(b)
+        return c
 
 ```
 
