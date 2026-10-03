@@ -62,20 +62,16 @@ This word contains a `'$'` character and does not have a consonant.
 ## Solution
 
 **Language:** Python  
-**Runtime:** 1 ms (beats 25.89%)  
-**Memory:** 19.4 MB (beats 35.04%)  
-**Submitted:** 2026-10-03T12:02:15.090Z  
+**Runtime:** 0 ms (beats 100.00%)  
+**Memory:** 19.3 MB (beats 71.43%)  
+**Submitted:** 2026-10-03T12:08:17.315Z  
 
 ```py
 class Solution:
     def isValid(self, word: str) -> bool:
         if len(word)<3:
             return False
-        elif '$' in word:
-            return False
-        elif '#' in word:
-            return False
-        elif '@' in word:
+        elif not word.isalnum():
             return False
         else:
             c,f=0,0
