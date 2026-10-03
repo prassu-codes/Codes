@@ -2,11 +2,7 @@ class Solution:
     def isValid(self, word: str) -> bool:
         if len(word)<3:
             return False
-        elif '$' in word:
-            return False
-        elif '#' in word:
-            return False
-        elif '@' in word:
+        elif not word.isalnum():
             return False
         else:
             c,f=0,0
